@@ -95,7 +95,9 @@ class AnalyticTool {
           );
           var data = jsonEncode(model);
           var errorModel = AnalyticErrorModel(data: data);
-          AnalyticErrorDb.getInstance().then((db) => db.insert(row: errorModel));
+          AnalyticErrorDb.getInstance().then(
+            (db) => db.insert(row: errorModel),
+          );
         }
       },
     );
@@ -160,7 +162,11 @@ class AnalyticTool {
 
   /// 获取当前页面信息
   Map<String, dynamic> getCurrentPageData() {
-    return {"code": currentPageCode, "name": _currentPageName, "extra": _currentPageExtra};
+    return {
+      "code": currentPageCode,
+      "name": _currentPageName,
+      "extra": _currentPageExtra,
+    };
   }
 
   /// 返回当前页面
@@ -239,12 +245,20 @@ class AnalyticTool {
     }
   }
 
+  /// 更新回话ID
+  void updateSessionId() {
+    _sessionId = Uuid().v4();
+  }
+
+  /// 获取当前回话ID
+  String get sessionId => _sessionId;
+
   /// Property
   String _userid = "";
   String _api = "";
   String _systemVersion = "";
   String _appVersion = "";
-  final String _sessionId = const Uuid().v4();
+  String _sessionId = const Uuid().v4();
 
   String currentPageCode = "";
   String _currentPageName = "";
