@@ -68,7 +68,10 @@ class AnalyticTool {
     }
 
     // Firebase打点
-    FirebaseAnalyticTool.addEvent(name: "${code}_${type.firebaseTypeCode}");
+    FirebaseAnalyticTool.addEvent(
+      name: "${code}_${type.firebaseTypeCode}",
+      version: _appVersion,
+    );
 
     // 接口记录
     recordEvent(
@@ -115,6 +118,10 @@ class AnalyticTool {
     required Function() onSuccess,
     required Function() onError,
   }) async {
+    if (_api.isEmpty) {
+      return;
+    }
+
     // 获取位置信息
     final loaction = await IpLocation.getIpLocation();
     // 将 extra 转为 JSON 字符串

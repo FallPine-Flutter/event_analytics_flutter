@@ -13,7 +13,7 @@
 
 ```yaml
 dependencies:
-  qs_event_analytics: ^1.0.7
+  qs_event_analytics: ^1.0.8
 ```
 
 如果使用本地路径调试：

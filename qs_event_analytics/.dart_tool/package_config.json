@@ -98,12 +98,6 @@
       "languageVersion": "3.7"
     },
     {
-      "name": "ffi_leak_tracker",
-      "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/ffi_leak_tracker-0.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "3.10"
-    },
-    {
       "name": "file",
       "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/file-7.0.1",
       "packageUri": "lib/",
@@ -188,12 +182,6 @@
       "languageVersion": "3.9"
     },
     {
-      "name": "http",
-      "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/http-1.6.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.4"
-    },
-    {
       "name": "http_parser",
       "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/http_parser-4.1.2",
       "packageUri": "lib/",
@@ -270,18 +258,6 @@
       "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/nm-0.5.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
-    },
-    {
-      "name": "package_info_plus",
-      "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/package_info_plus-10.2.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.10"
-    },
-    {
-      "name": "package_info_plus_platform_interface",
-      "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/package_info_plus_platform_interface-4.1.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.10"
     },
     {
       "name": "path",
@@ -486,12 +462,6 @@
       "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/web-1.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
-    },
-    {
-      "name": "win32",
-      "rootUri": "file:///Users/gyhdev/.pub-cache/hosted/pub.dev/win32-6.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.10"
     },
     {
       "name": "xdg_directories",
